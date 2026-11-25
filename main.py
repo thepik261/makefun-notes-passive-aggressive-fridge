@@ -32,7 +32,7 @@ def main() -> None:
     # created must be world-readable. Never chmod /output itself.
     try:
         os.chmod(OUTPUT_PATH, 0o644)
-        print(f"Wrote {OUTPUT_PATH}")
+        print(f"Wrote {OUTPUT_PATH} ({len(NOTE)} characters)")
     except OSError:
         pass
 
